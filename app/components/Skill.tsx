@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Skill(props:any){
     return(
-        <div className="border-2 h-50 w-45 rounded-2xl pt-8">
-            <Image src={props.qLin} width={90} height={90} alt="Picture of the author" className="block ml-9"/>
+        <div className="h-45 w-40 border-2 rounded-2xl pt-5 place-items-center">
+            <Image src={props.qLin} width={100} height={100} alt="Picture of the author" className=""/>
 
-            <p className="block pt-4 ml-11">Github</p>
+            <p className="text-xl">{props.nome}</p>
         </div>
     )
 }
