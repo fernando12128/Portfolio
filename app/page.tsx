@@ -1,8 +1,8 @@
 import Image from "next/image";
-import img from "@/public/image/teste.png"
+import img from "@/public/image/60632443.png"
 import Skill from "./components/Skill";
 import Projects from "@/app/components/Projects"
-import git from "@/public/image/icons8-github-96.png"
+
 
 export default function Home() {
   return (
@@ -19,20 +19,20 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="mx-80 ">
-        <div className="mt-24 flex items-center justify-between">{/* HOME */}
-          <Image src={img} width={200} height={200} alt="Picture of the author" className=" rounded-full"/>
+      <main className=" ">
+        <div className="mt-24 mx-80 flex items-center justify-between">{/* HOME */}
+          <Image src={img} width={250} height={250} alt="Picture of the author" className=" rounded-full"/>
           <p className=" text-5xl">Bem vindo ao meu portfolio</p>
         </div>
 
           {/* <p>Sobre mim</p> */}
-        <div className="mt-20 flex items-center justify-between">{/* Sobre mim */}
+        <div className="mt-20 mx-80 flex items-center justify-between">{/* Sobre mim */}
           <p className="text-3xl border ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempore ipsum provident sapiente veritatis eaque delectus quo, nam ut suscipit quasi, earum sint aut qua</p>
           <Image src={img} width={300} height={300} alt="Picture of the author" className=""/>
         </div>
       
 
-        <div className="mt-24 grid grid-cols-6 gap-4">{/* Conhecimento Tecnico */}
+        <div className="mt-24 mx-80 grid grid-cols-6 gap-4">{/* Conhecimento Tecnico */}
 
           <Skill qLin="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" nome="Git"/>
           <Skill qLin="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" nome="JavaScript"/>
@@ -45,7 +45,7 @@ export default function Home() {
 
         </div>
 
-        <div className="mt-24 grid grid-cols-2 gap-7">{/* Projetos realizados */}
+        <div className="mt-24 mx-80 grid grid-cols-2 gap-7">{/* Projetos realizados */}
 
         <Projects />
         <Projects />
@@ -54,8 +54,8 @@ export default function Home() {
 
       </main>
       
-      <footer className="">
-        
+      <footer className="mt-24 h-20 bg-black flex justify-center items-center">
+        <p className="text-amber-50 ">&#169; Fernando Calixto</p>
       </footer>
     </div>
   );
